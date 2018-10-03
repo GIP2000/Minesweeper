@@ -104,8 +104,14 @@ def getBoard():
 
     return board
 
-
-
+def printBoard(board):
+    bString = ""
+    for y in range(len(board)):
+        for x in range(len(board[y])):
+            bString += str(board[y][x].getValue())
+            bString += " "
+        bString += "\n"
+    print(bString)
 
 
 
